@@ -2,7 +2,7 @@
 
 import pkg from './package.json'
 import { defineConfig } from 'sanity'
-import { projectId, dataset, apiVersion } from '@/sanity/lib/env'
+import { projectId, dataset, apiVersion } from './src/sanity/lib/env'
 import { structure } from './src/sanity/structure'
 import { presentation } from './src/sanity/presentation'
 import { icon, infoWidget } from 'sanitypress-utils'
@@ -14,10 +14,10 @@ import {
 import { vercelWidget } from 'sanity-plugin-dashboard-widget-vercel'
 import { visionTool } from '@sanity/vision'
 import { codeInput } from '@sanity/code-input'
-import { supportedLanguages } from '@/lib/i18n'
+import { supportedLanguages } from './src/lib/i18n'
 import { documentInternationalization } from '@sanity/document-internationalization'
 import { schemaTypes } from './src/sanity/schemaTypes'
-import resolveUrl from '@/lib/resolveUrl'
+import resolveUrl from './src/lib/resolveUrl'
 
 const singletonTypes = ['site']
 
